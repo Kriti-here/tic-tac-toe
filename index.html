@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tic Tac Toe</title>
+	<link rel="stylesheet" href="style.css"></link>
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<div class="main-text">
+		<h1>tic</h1>
+		<h1>tac</h1>
+		<h1>toe.</h1>
+	</div>
+	<div class="game">
+		<div id="status">START GAME WITH PLAYER "X"</div>
+		<div class="game-board">
+			<div class="cell" data-index="0"></div>
+			<div class="cell" data-index="1"></div>
+			<div class="cell" data-index="2"></div>
+			<div class="cell" data-index="3"></div>
+			<div class="cell" data-index="4"></div>
+			<div class="cell" data-index="5"></div>
+			<div class="cell" data-index="6"></div>
+			<div class="cell" data-index="7"></div>
+			<div class="cell" data-index="8"></div>
+		</div>
+		<div class="score">
+			<span>X: <span id="scoreX">0</span></span>
+			<span>O: <span id="scoreO">0</span></span>
+			<button onclick="score={X:0,O:0}; document.getElementById('scoreX').textContent=0; document.getElementById('scoreO').textContent=0;">Reset Score</button>
+	    </div>
+		<div class="win"></div>
+		<button id="reset" onclick="restart()">Restart</button>
+	</div>
+</body>
+</html>
