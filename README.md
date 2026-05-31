@@ -41,4 +41,4 @@ tic-tac-toe/
 
 ---
 
-Made by [your-username](https://github.com/your-username)
+Made by [Kriti-here]
